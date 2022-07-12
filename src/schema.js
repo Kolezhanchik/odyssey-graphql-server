@@ -24,7 +24,7 @@ type Track {
     author: Author!
     thumbnail: String
     durationInSeconds: Int
-    length: Int
+    length: Int @deprecated (reason: "use durationInSeconds")
     modulesCount: Int
     description: String
     numberOfViews: Int
