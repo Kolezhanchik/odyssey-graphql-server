@@ -23,6 +23,7 @@ type Track {
     title: String!
     author: Author!
     thumbnail: String
+    durationInSeconds: Int
     length: Int
     modulesCount: Int
     description: String
@@ -39,7 +40,8 @@ type Author {
 type Module {
     id: ID!
     title: String!
-    length: Int
+    durationInSeconds: Int
+    length: Int @deprecated (reason: "use durationInSeconds")
 }
 
 `
